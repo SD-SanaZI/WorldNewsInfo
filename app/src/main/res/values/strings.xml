@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">World News Info</string>
+    <string name="headlines">headlines</string>
+    <string name="saved">saved</string>
+    <string name="sources">sources</string>
+    <string name="popular">Popular</string>
+    <string name="new_string">New</string>
+    <string name="relevant">Relevant</string>
+    <string name="date">Date</string>
+    <string name="choose_date">Choose date</string>
+    <string name="language">Language</string>
+    <string name="language_1">Русский</string>
+    <string name="language_2">English</string>
+    <string name="language_3">Deutsch</string>
+    <string name="headlines_tab_1">General</string>
+    <string name="headlines_tab_2">Business</string>
+    <string name="headlines_tab_3">Traveling</string>
+    <string name="date_string">%1$s - %2$s</string>
+    <string name="filters">Filters</string>
+    <string name="sources_string">Sources</string>
+    <string name="news_app">News APP</string>
+</resources>

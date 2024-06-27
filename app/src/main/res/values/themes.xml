@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+
+    <style name="Base.Theme.World_News_Info" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary60</item>
+        <item name="colorOnPrimary">@color/light_on_primary</item>
+        <item name="colorSecondaryContainer">@color/light_secondary_container</item>
+        <item name="colorOutlineVariant">@color/light_outline_variant</item>11
+        <item name="colorOnSurface">@color/light_on_surface</item>
+        <item name="colorOutline">@color/light_outline</item>
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="colorOnSurfaceVariant">@color/light_on_surface_variant</item>
+        <item name="colorError">@color/light_error</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <style name="Theme.World_News_Info" parent="Base.Theme.World_News_Info"/>
+
+    <style name="Base.Theme.Bar" parent="Base.Theme.World_News_Info">
+        <item name="android:background">?colorPrimary</item>
+    </style>
+
+    <style name="Theme.Material3" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="materialCalendarHeaderDivider">@style/Widget.AppTheme.MaterialCalendar.HeaderDivider</item>
+        <item name="materialCalendarHeaderToggleButton">@style/Widget.AppTheme.MaterialCalendar.HeaderToggleButton</item>
+    </style>
+
+    <style name="Widget.AppTheme.MaterialCalendar.HeaderDivider" parent="Widget.MaterialComponents.MaterialCalendar.HeaderDivider">
+        <item name="android:visibility">visible</item>
+        <item name="android:background">?colorOutlineVariant</item>
+    </style>
+
+    <style name="Widget.AppTheme.MaterialCalendar.HeaderToggleButton" parent="Widget.MaterialComponents.MaterialCalendar.HeaderDivider">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Theme.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/animated_lottie</item>
+        <item name="windowSplashScreenAnimationDuration">500</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.World_News_Info</item>
+    </style>
+
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="116dp">
+
+    <ImageView
+        android:id="@+id/app_bar_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="?colorPrimary"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/app_bar_guideline1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="52dp"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/app_bar_guideline2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="116dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/app_bar_button_first"
+        style="@style/AppBarImage"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/app_bar_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/app_bar_button_second"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/app_bar_guideline1" />
+
+    <ImageView
+        android:id="@+id/app_bar_button_second"
+        style="@style/AppBarImage"
+        app:layout_constraintBottom_toBottomOf="@+id/app_bar_button_first"
+        app:layout_constraintEnd_toStartOf="@id/app_bar_text"
+        app:layout_constraintStart_toEndOf="@id/app_bar_button_first"
+        app:layout_constraintTop_toTopOf="@+id/app_bar_button_first" />
+
+    <TextView
+        android:id="@+id/app_bar_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        android:paddingStart="3dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="8dp"
+        style="@style/AppBarText"
+        app:layout_constraintBottom_toBottomOf="@id/app_bar_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/app_bar_edit"
+        app:layout_constraintStart_toEndOf="@id/app_bar_button_second"
+        app:layout_constraintTop_toTopOf="@id/app_bar_guideline1"
+        android:visibility="visible"
+        />
+
+    <EditText
+        android:id="@+id/app_bar_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/app_bar_guideline2"
+        app:layout_constraintEnd_toStartOf="@id/app_bar_button_penultimate"
+        app:layout_constraintStart_toEndOf="@id/app_bar_text"
+        app:layout_constraintTop_toTopOf="@id/app_bar_guideline1"
+        android:textColor="@color/light_on_primary"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="?colorPrimary"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/app_bar_button_penultimate"
+        style="@style/AppBarImage"
+        app:layout_constraintBottom_toBottomOf="@+id/app_bar_button_first"
+        app:layout_constraintEnd_toStartOf="@id/app_bar_button_last"
+        app:layout_constraintStart_toEndOf="@id/app_bar_edit"
+        app:layout_constraintTop_toTopOf="@+id/app_bar_button_first" />
+
+    <ImageView
+        android:id="@+id/app_bar_button_last"
+        style="@style/AppBarImage"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/app_bar_button_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/app_bar_button_penultimate"
+        app:layout_constraintTop_toTopOf="@+id/app_bar_button_first" />
+
+    <TextView
+        android:id="@+id/app_bar_budge_last"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="4dp"
+        android:textColor="?attr/colorOnPrimary"
+        android:gravity="center"
+        android:background="@drawable/filtration_shape"
+        app:layout_constraintEnd_toEndOf="@id/app_bar_button_last"
+        app:layout_constraintTop_toTopOf="@id/app_bar_button_last"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

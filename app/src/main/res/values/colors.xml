@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_primary">#00677C</color>
+    <color name="light_on_primary">#FFFFFF</color>
+    <color name="light_primary_container">#B1ECFF</color>
+    <color name="light_on_primary_container">#001F27</color>
+    <color name="primary60">#009EBD</color>
+
+    <color name="light_secondary">#4B626A</color>
+    <color name="light_on_secondary">#FFFFFF</color>
+    <color name="light_secondary_container">#CEE7F0</color>
+    <color name="light_on_secondary_container">#061E25</color>
+    <color name="light_tertiary">#585C7E</color>
+    <color name="light_on_tertiary">#FFFFFF</color>
+    <color name="light_tertiary_container">#DFE0FF</color>
+    <color name="light_on_tertiary_container">#151937</color>
+    <color name="light_error">#BA1A1A</color>
+    <color name="light_on_error">#FFFFFF</color>
+    <color name="light_error_container">#FFDAD6</color>
+    <color name="light_on_error_container">#410002</color>
+
+    <color name="light_outline">#70787C</color>
+    <color name="light_outline_variant">#BFC8CC</color>
+
+    <color name="light_surface">#F8F9FB</color>
+    <color name="light_surface1">#FFFBFE</color>
+    <color name="light_on_surface">#191C1D</color>
+    <color name="light_on_surface_variant">#40484B</color>
+    <color name="dark_surface3">#1C1B1F</color>
+</resources>

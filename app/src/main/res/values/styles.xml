@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NavBarText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="NavBarImage">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="NavBarImageContainer">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:background">@drawable/active_button_shape</item>
+    </style>
+
+    <style name="AppBarImage">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginStart">3dp</item>
+        <item name="android:layout_marginEnd">3dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="AppBarText" parent="TextAppearance.AppCompat">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="TapBarTextActive" parent="TextAppearance.AppCompat">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="TapBarText" parent="TextAppearance.AppCompat">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+</resources>
