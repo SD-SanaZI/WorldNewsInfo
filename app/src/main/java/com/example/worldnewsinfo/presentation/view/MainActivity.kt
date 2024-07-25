@@ -62,20 +62,12 @@ class MainActivity : AppCompatActivity() {
         val lottieView = findViewById<LottieAnimationView>(R.id.animationView)
         lottieView.enableMergePathsForKitKatAndAbove(true)
         val splashScreenAnimationEndTime =
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                Instant.ofEpochMilli(vp.iconAnimationStartMillis + vp.iconAnimationDurationMillis)
-            } else {
-                TODO("VERSION.SDK_INT < O")
-            }
+            Instant.ofEpochMilli(vp.iconAnimationStartMillis + vp.iconAnimationDurationMillis)
         val delay =
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                Instant.now(Clock.systemUTC()).until(
-                    splashScreenAnimationEndTime,
-                    ChronoUnit.MILLIS
-                )
-            } else {
-                vp.iconAnimationDurationMillis
-            }
+            Instant.now(Clock.systemUTC()).until(
+                splashScreenAnimationEndTime,
+                ChronoUnit.MILLIS
+            )
 
         lottieView.postDelayed({
             vp.view.alpha = 0f
